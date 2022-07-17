@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className='flex items-center flex-wrap p-3 text-xl'>
+      <nav className='flex items-center flex-wrap p-3 text-xl bg-[#020122]'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mx-4 '>
           <Image 
@@ -27,13 +27,13 @@ export default function Navbar() {
                   border-radius: 50%;
                 }
               `}</style>
-            <span className='text-2xl ml-2 text-black font-bold uppercase tracking-wide'>
+            <span className='text-2xl ml-2 text-[#FFD23F] font-bold uppercase tracking-wide'>
               Mitchell Marino
             </span>
           </a>
         </Link>
         <button
-          className=' inline-flex p-3  rounded lg:hidden text-black ml-auto hover:text-[#2F4858] outline-none'
+          className=' inline-flex p-3  rounded lg:hidden text-[#FFD23F] ml-auto hover:text-[#F3FCF0] outline-none'
           onClick={handleClick}
         >
           <svg
@@ -42,7 +42,7 @@ export default function Navbar() {
             stroke='currentColor'
             viewBox='0 0 24 24'
             xmlns='http://www.w3.org/2000/svg'
-          >
+          >3
             <path
               strokeLinecap='round'
               strokeLinejoin='round'
@@ -58,27 +58,28 @@ export default function Navbar() {
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black px-5 font-bold items-center justify-center  hover:text-[#2F4858] '>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-[#FFD23F] px-5 font-bold items-center justify-center  hover:text-[#F3FCF0] '>
                 Home
               </a>
             </Link>
-            <Link href='#skills'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black px-5 font-bold items-center justify-center  hover:text-[#2F4858]'>
-                Skills
+            <Link href='#about'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-[#FFD23F] px-5 font-bold items-center justify-center  hover:text-[#F3FCF0] '>
+                About
               </a>
             </Link>
+            
             <Link href='#projects'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black px-5 font-bold items-center justify-center  hover:text-[#2F4858]'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-[#FFD23F] px-5 font-bold items-center justify-center  hover:text-[#F3FCF0]'>
                 Projects
               </a>
             </Link>
             <Link href='#contact'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black px-5 font-bold items-center justify-center  hover:text-[#2F4858]'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-[#FFD23F] px-5 font-bold items-center justify-center  hover:text-[#F3FCF0]'>
                 Contact
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black px-5 font-bold items-center justify-center  hover:text-[#2F4858]'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-[#FFD23F] px-5 font-bold items-center justify-center  hover:text-[#F3FCF0]'>
                 Resume
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

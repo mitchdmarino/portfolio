@@ -41,11 +41,11 @@ export default function Skills() {
     ]
     return (
         <>
-        <h2 className='text-8xl text-right'>My skills</h2>
-           <div className="grid sm:grid-cols-2 md:grid-cols-3 w-2/3 float-right">
+        <h2 className='text-5xl text-center'>My skills</h2>
+           <div className="grid sm:grid-cols-2 md:grid-cols-3 w-2/3 mx-auto">
                 {skills.map((skill, index) => {
                     return (
-                        <div key={`skill-${index}`}className="flex text-2xl bg-gray-100 m-2 p-6 rounded-2xl justify-center hover:bg-gray-200">
+                        <div key={`skill-${index}`}className="flex text-2xl text-[#020122] bg-[#EE4266] m-4 p-6 rounded-2xl justify-center hover:text-[#F3FCF0]">
                             <p>{skill.name}</p>
                             {skill.icon ? 
                             
