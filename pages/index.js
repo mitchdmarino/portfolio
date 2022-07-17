@@ -74,12 +74,36 @@ export default function Home() {
         </section>
 
         {/* CONTACT SECTION */}
-        <section id='contact'>
-          <h1>Contact Me</h1>
+        <section id='contact' className='bg-[#020122] p-10 text-[#F3FCF0]'>
+          <h1 className='text-[#F3FCF0] text-5xl text-center'>CONTACT</h1>
+          <div className='flex mx-auto w-3/4 justify-center'>
+          <a className='hover:scale-125 mt-5 text-2xl' href='mailto:mitchdmarino@gmail.com'>mitchdmarino@gmail.com</a>
+          <a className='' href='https://github.com/mitchdmarino' target='_blank'>
+            <div className='mx-20 bg-[#F3FCF0] hover:scale-125 rounded-full' style={{width: 100, height: 55, position: 'relative'}}>
+              <Image 
+                  src={'/github.png'}
+                  alt={`github logo`}
+                  layout='fill'
+                  objectFit='contain'
+              />
+            </div>
+          </a>
+          <a className='' href='https://www.linkedin.com/in/mitchellmarino/' target='_blank'>
+            <div className='bg-[#F3FCF0] hover:scale-125 rounded-full ' style={{width: 100, height: 55, position: 'relative'}}>
+              <Image 
+                  src={'/linkedin.png'}
+                  alt={`linkedin logo`}
+                  layout='fill'
+                  objectFit='contain'
+              />
+            </div>
+          </a>
+
+          </div>
         </section>
       </main>
 
-      <footer className={styles.footer}>
+      <footer className='bg-[#020122]'>
         
       </footer>
     </div>
