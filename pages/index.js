@@ -22,7 +22,7 @@ export default function Home() {
         <section id='home' className='pb-[300px] bg-[#0075C4]  pt-[100px] '>
           <div className='w-full text-black pl-[10%]'>
             <p className='text-3xl  text-left mx-auto font-light '>Hi there, I'm </p>
-            <h1 className='text-7xl text-[#FFD23F] md:text-8xl lg:text-9xl mt-20 mb-20 text-left'>Mitchell Marino</h1>
+            <h1 className='text-7xl font-bold text-[#F7FE72] md:text-8xl lg:text-9xl mt-20 mb-20 text-left'>Mitchell Marino</h1>
             <p className='text-3xl text-left mt-10 '>A Full-Stack Software Engineer with a passion solving problems efficiently</p>
           </div>
         </section>
@@ -75,8 +75,18 @@ export default function Home() {
 
         {/* CONTACT SECTION */}
         <section id='contact' className='bg-[#020122] p-10 text-[#F3FCF0]'>
-          <h1 className='text-[#F3FCF0] text-5xl text-center'>CONTACT</h1>
+          <h1 className='text-[#F3FCF0] pb-5 text-5xl text-center'>CONTACT</h1>
           <div className='flex mx-auto w-3/4 justify-center'>
+          <a className='' href='https://www.linkedin.com/in/mitchellmarino/' target='_blank'>
+            <div className='mx-20 bg-[#F3FCF0] hover:scale-125 rounded-full ' style={{width: 100, height: 55, position: 'relative'}}>
+              <Image 
+                  src={'/linkedin.png'}
+                  alt={`linkedin logo`}
+                  layout='fill'
+                  objectFit='contain'
+              />
+            </div>
+          </a>
           <a className='hover:scale-125 mt-5 text-2xl' href='mailto:mitchdmarino@gmail.com'>mitchdmarino@gmail.com</a>
           <a className='' href='https://github.com/mitchdmarino' target='_blank'>
             <div className='mx-20 bg-[#F3FCF0] hover:scale-125 rounded-full' style={{width: 100, height: 55, position: 'relative'}}>
@@ -88,16 +98,7 @@ export default function Home() {
               />
             </div>
           </a>
-          <a className='' href='https://www.linkedin.com/in/mitchellmarino/' target='_blank'>
-            <div className='bg-[#F3FCF0] hover:scale-125 rounded-full ' style={{width: 100, height: 55, position: 'relative'}}>
-              <Image 
-                  src={'/linkedin.png'}
-                  alt={`linkedin logo`}
-                  layout='fill'
-                  objectFit='contain'
-              />
-            </div>
-          </a>
+          
 
           </div>
         </section>

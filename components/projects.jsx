@@ -54,7 +54,7 @@ export default function Projects() {
     
     return (
         <div className="p-10">
-            <h1 className="text-5xl">MY PROJECTS</h1>
+            <h1 className="text-5xl text-center">MY PROJECTS</h1>
             <div className="flex flex-wrap w-4/5 mx-auto justify-center">
                 {projCards}
             </div>
