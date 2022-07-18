@@ -18,7 +18,7 @@ export default function Projects() {
             deployed: ''
         },
         {
-            name: 'Simplifry',
+            name: 'CheckMate',
             description: 'Recipe App',
             tools: ['placeholder','Express', 'Node'],
             image: 'placeholder',
@@ -30,7 +30,7 @@ export default function Projects() {
 
     const projCards = projects.map(project => {
         return (
-            <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-[#F3FCF0] m-10 w-[400px]">
+            <div key={project.name}className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-[#F3FCF0] m-10 w-[400px]">
                 <img className="w-full" src={project.image} alt={project.description}/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{project.name}</div>
@@ -44,7 +44,7 @@ export default function Projects() {
                     
                     {project.tools.map(tool => {
                         return (
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tool}</span>
+                            <span key={project.name + tool.name} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tool}</span>
                         )
                     })}
                 </div>
