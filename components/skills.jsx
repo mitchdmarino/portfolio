@@ -41,22 +41,22 @@ export default function Skills() {
     ]
     return (
         <>
-        <h2 className='text-5xl text-center'>My skills</h2>
-           <div className="grid sm:grid-cols-2 md:grid-cols-3 w-2/3 mx-auto">
+        <h2 className='text-5xl text-center py-10'>SKILLS</h2>
+           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 w-full mx-auto">
                 {skills.map((skill, index) => {
                     return (
-                        <div key={`skill-${index}`}className="flex text-2xl text-[#020122] bg-[#EE4266] m-4 p-6 rounded-2xl justify-center hover:text-[#F3FCF0]">
-                            <p>{skill.name}</p>
+                        <div key={`skill-${index}`}className="flex mx-auto flex-col text-2xl text-[#020122] bg-gray-200 m-4 p-6 w-[150px] rounded-2xl justify-center hover:shadow">
                             {skill.icon ? 
                             
-                            <div className='' style={{width: 50, height: 25, position: 'relative'}}>
+                            <div className='mb-3 mx-auto' style={{width: 50, height: 50, position: 'relative'}}>
                                 <Image 
                                     src={skill.icon}
                                     alt={`${skill.name} icon`}
                                     layout='fill'
                                     objectFit='contain'
-                                />
+                                    />
                             </div>: '' }
+                                    <p className='text-center'>{skill.name}</p>
 
                         </div>
                     )

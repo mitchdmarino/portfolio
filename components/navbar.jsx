@@ -38,7 +38,7 @@ export default function Navbar() {
             leaveFrom='translate-x-0'
             leaveTo='-translate-x-full'
           >       
-            <Disclosure.Panel className="p-6 w-[250px] bg-[#55917F] h-screen fixed z-20 lg:w-[400px]  ">
+            <Disclosure.Panel className="p-6 w-[250px] bg-[#55917F] h-screen fixed z-20">
               
               <div className="flex flex-col justify-start item-center ">
                 <Disclosure.Button>

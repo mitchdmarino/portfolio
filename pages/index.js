@@ -22,57 +22,62 @@ export default function Home() {
       <main>
 
         {/* HOME SECTION */}
-        <section id='home' className='pb-[300px] bg-[#0075C4]  pt-[100px] '>
-          <div className='w-full text-black pl-[10%]'>
-            <p className='text-3xl  text-left mx-auto font-light '>Hi there, {"I'm"} </p>
-            <h1 className='text-7xl font-bold text-[#F7FE72] md:text-8xl lg:text-9xl mt-20 mb-20 text-left'>Mitchell Marino</h1>
-            <p className='text-3xl text-left mt-10 '>A Full-Stack Software Engineer with a passion solving problems efficiently</p>
+        <section id='home' className='pb-[150px]   pt-[100px] '>
+          <div className='bg-[#55917F] profile h-[416px] w-[416px] pt-[8px] pl-[8px] mx-auto  '>
+                
+                <Image 
+                    className='profile'
+                    src='/linkedinprofilepic.jpg'
+                    alt='Mitchell Marino Profile Picture'
+                    height={400}
+                    width={400}
+                  />
+                  <style global jsx>{`
+                        .profile {
+                          border-radius: 50%;
+                        }
+                      `}</style>
+            </div>
+          <div className='w-full text-black text-center pt-10'>
+            <p className='text-3xl mx-auto font-light '>Hi there! {"I'm"} </p>
+            <h1 className='text-7xl font-bold text-black md:text-8xl lg:text-9xl mt-10 mb-20 '><span className='text-[#2E1760]'>Mitchell</span> Marino</h1>
+            <p className='text-3xl  mt-10 px-20 '>A <span className='text-[#2E1760]'>Full-Stack Web Developer</span> passionate about creating software solutions that enhance the user experience and simplify backend complexity.</p>
           </div>
         </section>
+
+        <hr></hr>
         
         {/* ABOUT SECTION */}
-        <div id='about'className='w-full bg-[#020122] text-[#F3FCF0] p-10 md:px-32'>
+        <div id='about'className='w-full  text-black p-10 pb-40 md:px-32'>
           <h1 className='text-6xl text-center pb-10'>ABOUT ME</h1>
           <div className='flex flex-col justify-center'>
-            <div className='bg-[#0075C4] profile h-[416px] w-[416px] pt-[8px] pl-[8px] mx-auto  '>
-              <Image 
-                  className='profile'
-                  src='/linkedinprofilepic.jpg'
-                  alt='Mitchell Marino Profile Picture'
-                  height={400}
-                  width={400}
-                />
-                <style global jsx>{`
-                      .profile {
-                        border-radius: 50%;
-                      }
-                    `}</style>
-            </div>
+            
             <div className='w-full  '>
-              <h3 className='text-5xl py-10 lg:px-20'>My Story</h3>
-              <p className='text-2xl lg:px-20'>When I graduated from college in 2020 with a Bachelors in Molecular Biology, I 
-                Coming out of college with a Bachelors in Molecular Biology, I found success as a lab technician. While I gained valuable expereince designing/executing experiments and working in a high-throughput setting, I found myself questioning my career path.
-                I was feeling burnt out and passionless. To my surprise, I found a new passion with computer programming. After much consideration and deliberation, I finally 
-                dove into the tech world and committed myself to becoming a successful software engineer.  
+            
+              <p className='text-2xl lg:px-20'>I'm a full-stack web developer with a background in biotechnology. After completing a Molecular Biology Bachelor's Degree and spending 
+              almost 2 years in the industry, I decided to make a change and pursue a career in software engineering. 
                 <br></br>
                 <br></br>
-                After completing the Software Engineering Immersive Bootcamp at General Assembly, I have gained the skills necessary 
-                to create my own full stack applications. With a strong passion for designing organized, efficient backends and intuitive, interactive frontends, I aim to 
-                help companies deploy websites that enhance the user experience.
+                After completing the <span className='text-[#2E1760]'>Software Engineering Immersive Bootcamp at General Assembly </span>, I have gained the skills necessary 
+                to create full stack applications from scratch. With a strong passion for designing organized, efficient backends and intuitive, interactive frontends, I aim to 
+                help companies deploy websites that enhance the user experience, while simplifying the complexities of backend management.  I find that I can apply many of my previous skills as a scientist to solving coding problems, such as research, experimentation and strong attention to 
+                detail. With these skills, I attack coding through a scientific lens, which helps me work effieciently and methodically.
 
               </p>
             </div>
           </div>
         </div>
       
-        
-        <div className='w-full bg-[#020122] text-[#F3FCF0] pb-10'>
+        <hr></hr>
+        <div className='w-full  pb-10' id="skills">
           <Skills />
         </div>
+
+        <hr></hr>
         
         {/* PROJECTS SECTION */}
 
-        <section id='projects' className=' bg-[#0075C4] '>
+        <section id='projects' className='  '>
           <Projects />
         </section>
 
