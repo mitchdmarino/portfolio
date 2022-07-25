@@ -1,10 +1,8 @@
-import Link from 'next/link';
+
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Disclosure, Transition} from "@headlessui/react";
 import {
-  MdOutlineSpaceDashboard,
-  MdOutlineAnalytics,
   MdContactPage
 } from "react-icons/md";
 import {
@@ -17,10 +15,7 @@ import {
   AiOutlineInfoCircle,
   AiOutlineDownload
 } from "react-icons/ai"
-import { CgProfile } from "react-icons/cg";
-import { FaRegComments } from "react-icons/fa";
-import { BiMessageSquareDots } from "react-icons/bi";
-import Image from 'next/image'
+
 
 
 export default function Navbar() {
