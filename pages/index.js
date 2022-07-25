@@ -61,7 +61,7 @@ export default function Home() {
             
             <div className='w-full  '>
             
-              <p className='text-2xl lg:px-20'>{"I'm"} a full-stack web developer with a background in biotechnology. After completing a Molecular Biology Bachelor's Degree and spending 
+              <p className='text-2xl lg:px-20'>{"I'm"} a full-stack web developer with a background in biotechnology. After completing a Molecular Biology Bachelor{"'s"} Degree and spending 
               almost 2 years in the industry, I decided to make a change and pursue a career in software engineering. 
                 <br></br>
                 <br></br>
