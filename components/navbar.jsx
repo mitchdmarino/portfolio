@@ -5,11 +5,18 @@ import { Disclosure, Transition} from "@headlessui/react";
 import {
   MdOutlineSpaceDashboard,
   MdOutlineAnalytics,
-  MdOutlineIntegrationInstructions,
-  MdOutlineMoreHoriz,
-  MdOutlineSettings,
-  MdOutlineLogout,
+  MdContactPage
 } from "react-icons/md";
+import {
+  GrContactInfo,
+  GrProjects
+} from "react-icons/gr"
+import {
+  AiOutlineProject,
+  AiOutlineTool,
+  AiOutlineInfoCircle,
+  AiOutlineDownload
+} from "react-icons/ai"
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
 import { BiMessageSquareDots } from "react-icons/bi";
@@ -38,8 +45,8 @@ export default function Navbar() {
             leaveFrom='translate-x-0'
             leaveTo='-translate-x-full'
           >       
-            <Disclosure.Panel className="p-6 w-[250px] bg-[#55917F] h-screen fixed z-20">
-              
+            <Disclosure.Panel className="p-6 w-[250px] bg-gray-600 h-screen fixed z-20">
+            
               <div className="flex flex-col justify-start item-center ">
                 <Disclosure.Button>
                   <a className='inline-flex items-center p-2 mx-4 ' href='#'>
@@ -51,7 +58,7 @@ export default function Navbar() {
                 <div className=" my-4 border-b border-gray-100 pb-4">
                   <Disclosure.Button className="w-full">
                     <div className="flex mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                      <MdOutlineSpaceDashboard className="text-2xl text-gray-600 group-hover:text-white " />
+                      <AiOutlineInfoCircle className="text-2xl text-white group-hover:text-white " />
                         <a href="#about"className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white text-left px-5 font-bold items-center justify-center  hover:text-[#F3FCF0] '>
                           About
                         </a>
@@ -59,7 +66,7 @@ export default function Navbar() {
                   </Disclosure.Button>
                   <Disclosure.Button className="w-full">
                     <div className="flex mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                      <MdOutlineSpaceDashboard className="text-2xl text-gray-600 group-hover:text-white " />
+                      <AiOutlineTool className="text-2xl text-white group-hover:text-white " />
                         <a href="#skills"className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white text-left px-5 font-bold items-center justify-center  hover:text-[#F3FCF0] '>
                           Skills
                         </a>
@@ -67,7 +74,7 @@ export default function Navbar() {
                   </Disclosure.Button>
                   <Disclosure.Button className="w-full">
                     <div className="flex mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                      <MdOutlineSpaceDashboard className="text-2xl text-gray-600 group-hover:text-white " />
+                      <AiOutlineProject className="text-2xl text-white group-hover:text-white " />
                         <a href="#projects"className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white text-left px-5 font-bold items-center justify-center  hover:text-[#F3FCF0] '>
                           Projects
                         </a>
@@ -75,7 +82,7 @@ export default function Navbar() {
                   </Disclosure.Button>
                   <Disclosure.Button className="w-full">
                     <div className="flex mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                      <MdOutlineSpaceDashboard className="text-2xl text-gray-600 group-hover:text-white " />
+                      <MdContactPage className="text-2xl text-white group-hover:text-white " />
                         <a href="#contact"className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white text-left px-5 font-bold items-center justify-center  hover:text-[#F3FCF0] '>
                           Contact
                         </a>
@@ -83,7 +90,7 @@ export default function Navbar() {
                   </Disclosure.Button>
                   
                   <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                    <MdOutlineAnalytics className="text-2xl text-gray-600 group-hover:text-white " />
+                    <AiOutlineDownload className="text-2xl text-white group-hover:text-white " />
                     <a target="_blank" href='/Resume.pdf'  rel="noopener noreferrer" className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white px-5 font-bold items-center justify-center  hover:text-[#F3FCF0]'>
                       Resume
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
