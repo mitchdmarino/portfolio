@@ -61,7 +61,7 @@ export default function Home() {
             
             <div className='w-full  '>
             
-              <p className='text-2xl lg:px-20'>I'm a full-stack web developer with a background in biotechnology. After completing a Molecular Biology Bachelor's Degree and spending 
+              <p className='text-2xl lg:px-20'>{"I'm"} a full-stack web developer with a background in biotechnology. After completing a Molecular Biology Bachelor's Degree and spending 
               almost 2 years in the industry, I decided to make a change and pursue a career in software engineering. 
                 <br></br>
                 <br></br>
@@ -118,13 +118,13 @@ export default function Home() {
           <div className="container mt-20 mx-auto  text-black">
             <form action="action_page.php">
 
-              <label for="fname" className=''>First Name</label>
+              <label htmlFor="fname" className=''>First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
               <br></br>
-              <label for="lname">Last Name</label>
+              <label htmlFor="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
               <br></br>
-              <label for="subject">Subject</label>
+              <label htmlFor="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
               <br></br>
               <input type="submit" value="Submit"/>
