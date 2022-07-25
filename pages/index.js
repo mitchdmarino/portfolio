@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Navbar from '../components/navbar'
 
 // components 
 import Skills from '../components/skills'
@@ -9,12 +10,14 @@ import Projects from '../components/projects'
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Mitchell Marino</title>
         <meta name="description" content="Mitchell Marino Portfolio" />
         {/* put title icon here as link */}
       </Head>
+      <aside className='sticky top-0 z-50'><Navbar/></aside>
+      
 
       <main>
 
@@ -39,11 +42,11 @@ export default function Home() {
                   height={400}
                   width={400}
                 />
-                <style jsx>{`
-                  .profile {
-                    border-radius: 50%;
-                  }
-                `}</style>
+                <style global jsx>{`
+                      .profile {
+                        border-radius: 50%;
+                      }
+                    `}</style>
             </div>
             <div className='w-full  '>
               <h3 className='text-5xl py-10 lg:px-20'>My Story</h3>
