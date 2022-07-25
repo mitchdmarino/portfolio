@@ -24,6 +24,12 @@ a {
   box-sizing: border-box;
 }
 
+#__next {
+  display: flex;
+  
+  min-height: 100vh;
+  min-width: 100vw;
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -45,7 +51,11 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
 }
+
+
+
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
