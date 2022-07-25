@@ -47,8 +47,8 @@ export default function Home() {
           </div>
           <div className='flex justify-center flex-wrap pt-10'>
             <div className='bg-black hover:bg-[#95190C] rounded-full text-white h-20 w-40 flex justify-center hover:shadow-xl align-center'><a target="_blank" href='/Resume.pdf'  rel="noopener noreferrer" className='text-4xl pt-5'>Resume</a></div>
-            <AiOutlineLinkedin className='text-2xl h-20 w-20 hover:text-[#95190C] hover:shadow-md mx-10'/>
-            <AiOutlineGithub className='text-2xl h-20 w-20 hover:text-[#95190C] hover:shadow-md mx-10 '/>
+            <a href='https://www.linkedin.com/in/mitchellmarino/' target='_blank' rel="noreferrer"><AiOutlineLinkedin className='text-2xl h-20 w-20 hover:text-[#95190C] hover:shadow-md mx-10'/></a>
+            <a href='https://github.com/mitchdmarino' target='_blank' rel="noreferrer"><AiOutlineGithub className='text-2xl h-20 w-20 hover:text-[#95190C] hover:shadow-md mx-10 '/></a>
           </div>
         </section>
 
