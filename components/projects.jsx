@@ -7,7 +7,7 @@ export default function Projects() {
             tools: ['JavaScript', 'HTML5', 'CSS', 'Canvas'],
             image: 'Stratego.png',
             github: 'https://github.com/mitchdmarino/Stratego-mock',
-            deployed: 'https://mitchdmarino.github.io/Stratego-mock/'
+            deployed: 'https://mitchdmarino.github.io/Stratego-mock/',
         },
         {
             name: 'Simplifry',
@@ -42,13 +42,15 @@ export default function Projects() {
                 <img className="w-full" src={project.image} alt={project.description}/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 ">{project.name}</div>
+                    
                     <p className="text-gray-700 text-lg ">
                     {project.description}
                     </p>
-                   <div className="flex justify-center">
+                   <div className="flex justify-center pt-10">
                     <a className=" py-2 mx-4 block text-[#95190C] text-xl text-decoration-line: underline" href={project.github}>Repo</a>
                     <br></br>
                     <a className="py-2 block mx-4 text-[#95190C] text-xl text-decoration-line: underline" href={project.deployed}>Live</a>
+                    <a className="py-2 block mx-4 text-[#95190C] text-xl text-decoration-line: underline" href={`projects/${project.name.toLowerCase()}`}>Case Study</a>
                     </div>
                 </div>
                 <div className="px-6 pt-4 pb-2">
