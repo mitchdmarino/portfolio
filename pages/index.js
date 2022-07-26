@@ -116,7 +116,7 @@ export default function Home() {
           </a>         
 
           </div>
-          <div className="container mt-20 mx-auto  text-black">
+          {/* <div className="container mt-20 mx-auto  text-black">
             <form action="action_page.php">
 
               <label htmlFor="fname" className=''>First Name</label>
@@ -130,8 +130,8 @@ export default function Home() {
               <br></br>
               <input type="submit" value="Submit"/>
 
-            </form>
-          </div>
+            </form> 
+          </div> */}
         </section>
       </main>
 
