@@ -50,7 +50,7 @@ export default function Projects() {
                     <a className=" py-2 mx-4 block text-[#95190C] text-xl text-decoration-line: underline" href={project.github}>Repo</a>
                     <br></br>
                     <a className="py-2 block mx-4 text-[#95190C] text-xl text-decoration-line: underline" href={project.deployed}>Live</a>
-                    <a className="py-2 block mx-4 text-[#95190C] text-xl text-decoration-line: underline" href={`projects/${project.name.toLowerCase()}`}>Case Study</a>
+                    {/* <a className="py-2 block mx-4 text-[#95190C] text-xl text-decoration-line: underline" href={`projects/${project.name.toLowerCase()}`}>Case Study</a> */}
                     </div>
                 </div>
                 <div className="px-6 pt-4 pb-2">
