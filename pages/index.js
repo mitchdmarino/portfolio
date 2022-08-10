@@ -166,6 +166,7 @@ export default function Home() {
                 <Image
                   src={"/github.png"}
                   alt={`github logo`}
+
                   layout="fill"
                   objectFit="contain"
                 />
@@ -173,6 +174,7 @@ export default function Home() {
             </a>
           </div>
           <Contact />
+
         </section>
       </main>
 
