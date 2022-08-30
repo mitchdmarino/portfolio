@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Mitchell Marino</title>
+        <title>Mitchell Marino | Sofware Engineer</title>
         <meta name="description" content="Mitchell Marino Portfolio" />
         {/* put title icon here as link */}
       </Head>
@@ -20,31 +20,24 @@ export default function Home() {
         <Navbar />
       </aside>
 
-      <main>
-        {/* HOME SECTION */}
-        <Intro />
-        <hr></hr>
+      {/* HOME SECTION */}
 
-        {/* ABOUT SECTION */}
-        <About />
-        <hr></hr>
+      <Intro />
+      <hr></hr>
 
-        {/* SKILLS SECTION */}
-        <Skills />
-        <hr></hr>
+      {/* ABOUT SECTION */}
+      <About />
+      <hr></hr>
 
-        {/* PROJECTS SECTION */}
+      {/* PROJECTS SECTION */}
 
-        <section id="projects" className="  ">
-          <Projects />
-        </section>
+      <section id="projects" className="  ">
+        <Projects />
+      </section>
 
-        {/* CONTACT SECTION */}
+      {/* CONTACT SECTION */}
 
-        <Contact />
-      </main>
-
-      <footer className="bg-[#020122]"></footer>
+      <Contact />
     </div>
   );
 }

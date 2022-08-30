@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 html,
@@ -13,6 +14,38 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'League Spartan', sans-serif;
+  max-width: 100vw;
+}
+
+#wrapper {
+  overflow-x: 'hidden'
+}
+
+#home {
+  background: rgb(71,193,222);
+  background: linear-gradient(345deg, rgba(71,193,222,1) 0%, rgba(74,88,153,1) 100%);
+  min-height: 100vh;
+  
+}
+
+#about {
+  background: rgb(74,88,153);
+background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
+min-height: 100vh;
+
+}
+#contact {
+  background: rgb(74,88,153);
+background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
+min-height: 100vh;
+
+}
+
+#projects {
+  background: rgb(71,193,222);
+  background: linear-gradient(345deg, rgba(71,193,222,1) 0%, rgba(74,88,153,1) 100%);
+  min-height: 100vh;
+  
 }
 
 #__next {
