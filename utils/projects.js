@@ -65,7 +65,7 @@ export const projects = [
   },
   {
     name: "CheckMate",
-    description: "Organizational/Collaborative task list",
+    description: "Collaborative task list",
     tools: [
       <svg viewBox="0 0 128 128">
         <path
