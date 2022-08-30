@@ -6,16 +6,16 @@ export default function Projects() {
 
     const projCards = projects.map(project => {
         return (
-            <div key={project.name}className="max-w-[400px] p-4 mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl bg-blue-300 m-10 transition ease-in-out delay-100 duration-300 hover:bg-blue-200 hover:text-black">
+            <div key={project.name}className="max-w-[400px] p-4 mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl bg-blue-300 m-10 transition ease-in-out delay-100 duration-300 hover:bg-blue-200 group hover:text-black">
                 
                 <div className="px-6 py-4">
                     
-                    <div className="font-bold text-5xl mb-2  ">{project.name}</div>
+                    <div className="font-bold text-5xl mb-2"><h1>{project.name}</h1></div>
                     
-                    <p className=" text-2xl ">
+                    <p className=" text-2xl h-[75px] ">
                     {project.description}
                     </p>
-                    <div className='flex justify-center my-5 align-center rounded-xl'>
+                    <div className='flex transition ease-in-out delay-100 duration-300 hover:bg-blue-200 justify-center mb-5 align-center group-hover:scale-110 rounded-xl'>
                     <Image 
                         className='rounded-xl'
                         src={project.image}
@@ -24,19 +24,24 @@ export default function Projects() {
                         width={350}
                     />
                 </div>
-                <div className="px-6 pt-4 pb-2 flex justify-center">
+                <div className=" pt-4 pb-2 flex justify-between">
                     
                     {project.tools.map((tool,i) => {
                         return (
-                            <div key={`project${project.name}tool-${i}`} className='mb-3 mx-auto flex relative w-[40px] sm:w-[75px] md:w-[90px] lg:w-[110px] xl:w-[150px]'>
+                            <div key={`project${project.name}tool-${i}`} className='mb-3 mx-2 relative w-[40px] sm:w-[75px] md:w-[90px] lg:w-[110px] xl:w-[150px]'>
                                     {tool}
                             </div>
                         )
                     })}
                 </div>
-                   <div className="flex justify-center pt-10">
-                   <a className="py-2 block mx-4  text-xl text-decoration-line: underline" href={`projects/${project.name.toLowerCase()}`}>Learn More</a>                    {/* <a className="py-2 block mx-4 text-[#95190C] text-xl text-decoration-line: underline" href={`projects/${project.name.toLowerCase()}`}>Case Study</a> */}
-                    </div>
+                <div className="flex justify-center pt-10">
+                    <a className=" py-2 mx-4 block  text-xl text-decoration-line: underline" href={project.github}>Repo</a>
+                    <br></br>
+                    <a className="py-2 block mx-4  text-xl text-decoration-line: underline" href={project.deployed}>Live</a>         
+                </div>
+                {/* <div className="flex justify-center pt-10 group-hover:animate-bounce">
+                   <a className="py-2 block mx-4  text-3xl" href={`projects/${project.name.toLowerCase()}`}>Learn More</a>
+                </div> */}
                 </div>
             </div>
         )
