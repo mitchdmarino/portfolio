@@ -9,7 +9,7 @@ export default function About () {
               <p className="text-2xl ">
                 {"I'm"} a full-stack web developer with a background in
                 biotechnology. After completing a Molecular Biology Bachelor
-                {"'s"} Degree and spending almost 2 years in the industry, I
+                {"'s"} Degree and spending a few years in biotech, I
                 decided to make a change and pursue a career in software
                 engineering. 
                 <br></br>
@@ -25,7 +25,7 @@ export default function About () {
                 the user experience, while simplifying the complexities of
                 backend management. I find that I can apply many of my previous
                 skills as a scientist to solving coding problems, such as
-                research, experimentation and strong attention to detail. With
+                research, experimentation, and strong attention to detail. With
                 these skills, I attack coding through a scientific lens, which
                 helps me work effieciently and methodically.
               </p>
