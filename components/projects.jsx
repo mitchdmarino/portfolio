@@ -66,7 +66,7 @@ export default function Projects() {
     })
     
     return (
-        <div className="p-10">
+        <div  id="projects" className="p-10 text-[#4D243D]">
             <h1 className="text-5xl text-center">MY PROJECTS</h1>
             <div className="flex flex-wrap  mx-auto justify-center">
                 {projCards}

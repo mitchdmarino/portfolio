@@ -2,23 +2,23 @@ import Skills from './skills'
 
 export default function About () {
     return (
-        <div id="about" className="w-full  text-black p-10 pb-40 md:px-32">
-          <h1 className="text-6xl text-center pb-10">ABOUT ME</h1>
+        <section id="about" className="w-full  text-[#4D243D] p-10 md:px-16 lg:px-20 pb-40 ">
+          <h1 className="text-6xl pb-10">ABOUT ME</h1>
           <div className="flex flex-col justify-center">
             <div className="w-full  ">
-              <p className="text-2xl lg:px-20">
+              <p className="text-2xl ">
                 {"I'm"} a full-stack web developer with a background in
                 biotechnology. After completing a Molecular Biology Bachelor
                 {"'s"} Degree and spending almost 2 years in the industry, I
                 decided to make a change and pursue a career in software
-                engineering.
+                engineering. 
                 <br></br>
                 <br></br>
                 After completing the{" "}
-                <span className="text-[#95190C]">
-                  Software Engineering Immersive Bootcamp at General Assembly{" "}
+                <span className="text-[white] font-bold">
+                Software Engineering Bootcamp{" "}
                 </span>
-                , I have gained the skills necessary to create full stack
+                at General Assembly, I have gained the skills necessary to create full stack
                 applications from scratch. With a strong passion for designing
                 organized, efficient backends and intuitive, interactive
                 frontends, I aim to help companies deploy websites that enhance
@@ -31,6 +31,9 @@ export default function About () {
               </p>
             </div>
           </div>
-        </div>
+          <div id="skills">
+            <Skills />
+          </div>
+        </section>
     )
 }
