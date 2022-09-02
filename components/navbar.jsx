@@ -92,7 +92,7 @@ export default function Navbar() {
                     </Disclosure.Button>
                   </a>
 
-                  <a target="_blank" href='/Resume.pdf'  rel="noopener noreferrer" >
+                  <a target="_blank" href='/Mitchell_Marino_Resume.pdf'  rel="noopener noreferrer" >
                     <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                       <AiOutlineDownload className="text-3xl text-white group-hover:text-white " />
                       <p className='text-2xl font-normal lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white px-5 font-bold items-center justify-center  hover:text-[#F3FCF0]'>
