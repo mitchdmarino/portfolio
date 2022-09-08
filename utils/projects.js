@@ -5,7 +5,7 @@ const color = "#476C9B";
 export const projects = [
   {
     name: "MugHub",
-    description: "Ecommerce App built powered by Rails and React",
+    description: "Ecommerce App powered by Rails and React",
     tools: [
       <svg viewBox="0 0 128 128">
         <path
