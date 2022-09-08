@@ -15,7 +15,7 @@ export default function Projects() {
                     <p className=" text-xl sm:text-2xl h-[75px] ">
                     {project.description}
                     </p>
-                    <div className='flex transition ease-in-out delay-100 duration-300 hover:bg-blue-200 justify-center mb-5 align-center group-hover:scale-110 rounded-xl'>
+                    <div className='flex transition ease-in-out delay-100 duration-300 hover:bg-blue-200 justify-center mb-5 align-center hover:scale-110 rounded-xl'>
                     <Image 
                         className='rounded-xl'
                         src={project.image}
@@ -28,16 +28,16 @@ export default function Projects() {
                     
                     {project.tools.map((tool,i) => {
                         return (
-                            <div key={`project${project.name}tool-${i}`} className='mb-3 mx-2 relative w-[40px] sm:w-[75px] md:w-[90px] lg:w-[110px] xl:w-[150px]'>
+                            <div key={`project${project.name}tool-${i}`} className='mb-3 mx-2 relative w-[40px] sm:w-[75px] md:w-[90px] lg:w-[110px] xl:w-[150px] hover:scale-110'>
                                     {tool}
                             </div>
                         )
                     })}
                 </div>
                 <div className="flex justify-center pt-10">
-                    <a className=" py-2 mx-4 block  text-xl text-decoration-line: underline" href={project.github}>Repo</a>
+                    <a className=" py-2 mx-4 block  text-xl text-decoration-line: underline hover:text-blue-500" href={project.github}>Repo</a>
                     <br></br>
-                    <a className="py-2 block mx-4  text-xl text-decoration-line: underline" href={project.deployed}>Live</a>         
+                    {project.deployed? <a className="py-2 block mx-4  text-xl text-decoration-line: underline hover:text-blue-500" href={project.deployed}>Live</a>: ''}         
                 </div>
                 {/* <div className="flex justify-center pt-10 group-hover:animate-bounce">
                    <a className="py-2 block mx-4  text-3xl" href={`projects/${project.name.toLowerCase()}`}>Learn More</a>
