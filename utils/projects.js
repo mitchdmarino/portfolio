@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { skillList as skills } from "./skillList";
-const color = "#476C9B";
+const color = "#805E73";
 
 export const projects = [
   {

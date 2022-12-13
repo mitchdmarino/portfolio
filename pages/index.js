@@ -5,7 +5,7 @@ import Navbar from "../components/nav/navbar";
 import Intro from "../components/intro/intro";
 import About from "../components/about/about";
 import Skills from "../components/skills";
-import Projects from "../components/projects";
+import Projects from "../components/projects/projects";
 import Contact from "../components/contact";
 import { useEffect, useRef, useState } from "react";
 

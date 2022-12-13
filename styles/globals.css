@@ -8,6 +8,7 @@
   --important: #F87666;
   --tertiary: #805E73;
   --white: #ffffff;
+  --offWhite: #EAE6E5;
 }
 
 html {
@@ -33,20 +34,18 @@ body {
 }
 
 #about {
-  background: #EDE9E8;
+  background: var(--secondary);
   min-height: 100vh;
 
 }
 #contact {
-  background: rgb(74,88,153);
-  background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
-  min-height: 100vh;
+background-color: var(--secondary);
+min-height: 100vh;
 
 }
 
 #projects {
-  background: rgb(71,193,222);
-  background: linear-gradient(345deg, rgba(71,193,222,1) 0%, rgba(74,88,153,1) 100%);
+  background:  var(--white);
   min-height: 100vh;
   
 }
