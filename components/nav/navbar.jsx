@@ -32,7 +32,7 @@ export default function Navbar({navStatus, setNavStatus}) {
           <li className={styles.nav_item+ " " + aboutClass}><a href="#about">ABOUT</a></li>
           <li className={styles.nav_item+ " " + projectsClass}><a href="#projects">PROJECTS</a></li>
           <li className={styles.nav_item+ " " + contactClass}><a href="#contact">CONTACT</a></li>
-          <li className={styles.nav_item}><a href="#resume">RESUME</a></li>
+          <li className={styles.nav_item}><a href='/Mitchell_Marino_Resume.pdf'rel="noopener noreferrer"target="_blank">RESUME</a></li>
         </ul>
       </div>
     </nav>
