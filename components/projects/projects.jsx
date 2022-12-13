@@ -1,12 +1,10 @@
 import Image from 'next/image'
-import { projects } from '../utils/projects'
+import { projects } from '../../utils/projects'
 
 export default function Projects() {
-
-
     const projCards = projects.map(project => {
         return (
-            <div key={project.name}className=" max-w-[400px] p-4 mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl bg-blue-300 m-10 transition ease-in-out delay-100 duration-300 hover:bg-blue-200 group hover:text-black">
+            <div key={project.name}className=" max-w-[400px] p-4 mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl bg-gray-100 m-10 transition ease-in-out delay-100 duration-300 hover:bg-gray-200 group hover:text-black">
                 
                 <div className="px-6  py-4">
                     
@@ -35,9 +33,9 @@ export default function Projects() {
                     })}
                 </div>
                 <div className="flex justify-center pt-10">
-                    <a className=" py-2 mx-4 block  text-xl text-decoration-line: underline hover:text-blue-500" href={project.github}>Repo</a>
+                    <a className=" py-2 mx-4 block  text-xl text-decoration-line: underline text-[#F87666]" href={project.github}>Repo</a>
                     <br></br>
-                    {project.deployed? <a className="py-2 block mx-4  text-xl text-decoration-line: underline hover:text-blue-500" href={project.deployed}>Live</a>: ''}         
+                    {project.deployed? <a className="py-2 block mx-4  text-xl text-decoration-line: underline text-[#F87666]" href={project.deployed}>Live</a>: ''}         
                 </div>
                 {/* <div className="flex justify-center pt-10 group-hover:animate-bounce">
                    <a className="py-2 block mx-4  text-3xl" href={`projects/${project.name.toLowerCase()}`}>Learn More</a>
@@ -48,8 +46,8 @@ export default function Projects() {
     })
     
     return (
-        <div  id="projects" className=" py-10 text-[#4D243D]">
-            <h1 className="text-6xl px-10 sm:px-20">MY PROJECTS</h1>
+        <div  id="projects" className=" py-10">
+            <h1 className="text-6xl p-14 text-center">PROJECTS</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2  px-10 sm:px-20 xl:px-40 mx-auto justify-center">
                 {projCards}
             </div>

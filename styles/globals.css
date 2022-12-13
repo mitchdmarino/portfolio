@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --primary: #12130F;
+  --secondary: #EDE9E8;
+  --important: #F87666;
+  --tertiary: #805E73;
+  --white: #ffffff;
+  --offWhite: #EAE6E5;
+}
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 html,
@@ -22,28 +28,24 @@ body {
 }
 
 #home {
-  background: rgb(71,193,222);
-  background: linear-gradient(345deg, rgba(71,193,222,1) 0%, rgba(74,88,153,1) 100%);
+  background: var(--primary);
+  color: var(--secondary);
   min-height: 100vh;
-  
 }
 
 #about {
-  background: rgb(74,88,153);
-background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
-min-height: 100vh;
+  background: var(--secondary);
+  min-height: 100vh;
 
 }
 #contact {
-  background: rgb(74,88,153);
-background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
+background-color: var(--secondary);
 min-height: 100vh;
 
 }
 
 #projects {
-  background: rgb(71,193,222);
-  background: linear-gradient(345deg, rgba(71,193,222,1) 0%, rgba(74,88,153,1) 100%);
+  background:  var(--white);
   min-height: 100vh;
   
 }
@@ -62,17 +64,12 @@ a {
   box-sizing: border-box;
 }
 
-/* body {
-  width: 100vw;
-  position: absolute
-} */
-
-
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
+  background-color: #D9D9D9;
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid rgb(57, 94, 225); /* Gray border */
+  border: 1px solid var(--important); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -80,10 +77,15 @@ input[type=text], select, textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+input:focus {
+  border: 1px solid var(--important);
+}
+
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4179d4;
-  color: white;
+  background-color: var(--important);
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -91,17 +93,26 @@ input[type=submit] {
 
 }
 
-
-
-
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #0f1662;
+  background-color: var(--important);
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #e1e6ea;
+  
   padding: 20px;
+}
+
+.highlight {
+  color: var(--important)
+}
+
+.footer {
+  /* background-color: var(--primary); */
+  color: var(--primary);
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3em;
 }
