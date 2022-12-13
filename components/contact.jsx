@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-
+import Footer from "./footer"
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xjvzvgje");
@@ -60,7 +60,7 @@ export default function Contact() {
               />
             </form>
           </div>
-          <div className="md:flex mx-auto align-center justify-center">
+          <div className="md:flex mx-auto mb-20 align-center justify-center">
             <a
               className=""
               href="https://www.linkedin.com/in/mitchellmarino/"
@@ -104,6 +104,7 @@ export default function Contact() {
            </div>
             </a>
           </div>
+          <Footer />
    
     </section>
   );
