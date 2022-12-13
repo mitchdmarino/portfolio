@@ -1,0 +1,17 @@
+.nav {
+    background-color: #20221B;
+    padding: 20px;
+}
+
+.nav_item {
+    display: inline;
+    color: #EAE6E5;
+    padding: 0 5px 5px 5px;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.active {
+    color: #FF8877 !important;
+    border-bottom: 4px solid #FF8877;
+}

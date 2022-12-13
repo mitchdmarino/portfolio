@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --primary: #12130F;
+  --secondary: #EDE9E8;
+  --important: #F87666;
+  --tertiary: #805E73;
+  --white: #ffffff;
+}
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 html,
@@ -22,22 +27,20 @@ body {
 }
 
 #home {
-  background: rgb(71,193,222);
-  background: linear-gradient(345deg, rgba(71,193,222,1) 0%, rgba(74,88,153,1) 100%);
+  background: var(--primary);
+  color: var(--secondary);
   min-height: 100vh;
-  
 }
 
 #about {
-  background: rgb(74,88,153);
-background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
-min-height: 100vh;
+  background: #EDE9E8;
+  min-height: 100vh;
 
 }
 #contact {
   background: rgb(74,88,153);
-background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
-min-height: 100vh;
+  background: linear-gradient(15deg,rgba(74,88,153,1) 0%, rgba(71,193,222,1) 100%);
+  min-height: 100vh;
 
 }
 
@@ -62,12 +65,6 @@ a {
   box-sizing: border-box;
 }
 
-/* body {
-  width: 100vw;
-  position: absolute
-} */
-
-
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -90,9 +87,6 @@ input[type=submit] {
   cursor: pointer;
 
 }
-
-
-
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {

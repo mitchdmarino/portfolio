@@ -5,7 +5,7 @@ export default function Skills() {
     
     return (
         <div className="pb-10" id="skills">
-        <h2 className='text-5xl pt-20'>MY SKILLS</h2>
+        <h2 className='text-5xl pt-20'>SKILLS</h2>
            <div className="grid grid-cols-3  lg:grid-cols-6 justify-center place-items-center">
                 {skillList.map((skill, index) => {
                     return (
