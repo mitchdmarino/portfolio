@@ -8,6 +8,7 @@ import Skills from "../components/skills";
 import Projects from "../components/projects/projects";
 import Contact from "../components/contact";
 import { useEffect, useRef, useState } from "react";
+import Footer from "../components/footer";
 
 export default function Home() {
   const aboutRef = useRef()
@@ -70,6 +71,7 @@ export default function Home() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer/>
     </div>
   );
 }
