@@ -20,3 +20,19 @@
     fill: var(--primary);
 }
 
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.cardContainer :hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+    .cardContainer {
+        max-width: 1000px;
+    }   
+}
