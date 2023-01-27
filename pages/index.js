@@ -44,20 +44,20 @@ export default function Home() {
       {/* HOME SECTION */}
 
       <Intro />
-      <hr></hr>
+      
 
       {/* ABOUT SECTION */}
       <div ref={aboutRef}>
         <About />
       </div>
-      <hr></hr>
+      
 
       {/* PROJECTS SECTION */}
 
       <section id="projects" ref={projectsRef} className="  ">
         <Projects />
       </section>
-      <hr></hr>
+      
       {/* CONTACT SECTION */}
       <div ref={contactRef}>
         <Contact />

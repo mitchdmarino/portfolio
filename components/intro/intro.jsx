@@ -7,7 +7,7 @@ export default function Intro () {
     const { height, width } = useWindowDimensions();
     
     return (
-        <section id="home" className="pt-[50px]">
+        <section id="home" className="pt-[50px] md:pt-[100px] lg:pt-[200px]" >
           <ul className={styles.circles}>
                     <li></li>
                     <li></li>
