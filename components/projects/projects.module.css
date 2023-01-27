@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .cardContainer :hover {

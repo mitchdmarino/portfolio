@@ -12,7 +12,7 @@ export default function Projects() {
     
     return (
         <div id="projects" className=" p-10 pt-[100px] relative">
-            <h1 className="text-5xl mb-50 md:mb-10 text-left">Projects</h1>
+            <h1 className="text-5xl mb-10 text-left">Projects</h1>
             <div className={styles.cardContainer}>
                 {projCards}
             </div>
