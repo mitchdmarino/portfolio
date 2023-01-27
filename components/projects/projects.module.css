@@ -1,0 +1,22 @@
+.customShape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 11;
+}
+
+.customShape svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 137px;
+}
+
+.customShape .shapeFill {
+    fill: var(--primary);
+}
+

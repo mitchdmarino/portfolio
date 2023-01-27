@@ -1,7 +1,13 @@
 .nav {
-    background-color: #20221B;
+    background-color: var(--primary);
     padding: 20px;
+    color: #EAE6E5;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
+
 
 .nav_item {
     display: inline;
@@ -12,6 +18,6 @@
 }
 
 .active {
-    color: #FF8877 !important;
-    border-bottom: 4px solid #FF8877;
+    color: var(--important) !important;
+    border-bottom: 4px solid var(--important);
 }
