@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 :root {
-  --primary: #12130F;
+  --primary: #060416;
   --secondary: #EDE9E8;
-  --important: #F87666;
+  --important: #2fffb3;
   --tertiary: #805E73;
   --white: #ffffff;
   --offWhite: #EAE6E5;
@@ -19,8 +22,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'League Spartan', sans-serif;
-  max-width: 100vw;
+  font-family: 'Rubik', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  color: var(--secondary)
 }
 
 #wrapper {
@@ -28,14 +33,19 @@ body {
 }
 
 #home {
-  background: var(--primary);
+  background: rgb(9,4,186);
+  background: linear-gradient(345deg, rgb(5, 1, 117) 0%, rgba(189,12,255,1) 100%);
   color: var(--secondary);
-  min-height: 100vh;
+  min-height: 90vh;
+  position: relative;
 }
 
 #about {
-  background: var(--secondary);
+  position: relative;
+  z-index: 10;
+  background: var(--primary);
   min-height: 100vh;
+  
 
 }
 #contact {
@@ -101,7 +111,6 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  
   padding: 20px;
 }
 

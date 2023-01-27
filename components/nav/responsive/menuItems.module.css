@@ -1,0 +1,13 @@
+.active {
+    color: var(--important) !important;
+    border-bottom: 4px solid var(--important);
+}
+
+.nav_item {
+    display: inline;
+    color: #EAE6E5;
+    padding: 0 5px 5px 5px;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-align: center;
+}

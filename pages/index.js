@@ -37,15 +37,6 @@ export default function Home() {
   }, [navStatus])
   return (
     <div>
-      <Head>
-        <title>Mitchell Marino | Sofware Engineer</title>
-        <meta name="description" content="Mitchell Marino Portfolio" />
-        {/* put title icon here as link */}
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-      </Head>
       <aside className="sticky top-0 z-50">
         <Navbar navStatus={navStatus} setNavStatus={setNavStatus}/>
       </aside>

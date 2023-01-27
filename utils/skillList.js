@@ -1,4 +1,4 @@
-const color = "#4D243D";
+const color = "#2fffb3";
 
 export const skillList = [
   {
@@ -13,7 +13,7 @@ export const skillList = [
     ),
   },
   {
-    name: "HTML5",
+    name: "HTML",
     icon: (
       <svg viewBox="0 0 128 128">
         <path
@@ -24,7 +24,7 @@ export const skillList = [
     ),
   },
   {
-    name: "CSS3",
+    name: "CSS",
     icon: (
       <svg viewBox="0 0 128 128">
         <path

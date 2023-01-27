@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Skills from '../skills'
 import Image from 'next/image'
+import styles from './about.module.css'
 
 
 export default function About () {
@@ -11,38 +12,53 @@ export default function About () {
     }
 
   return (
-    <section id="about" className="w-full p-10 md:px-16 lg:px-20 pb-40">
-      <h1 className="text-6xl p-14 text-center">ABOUT</h1>
-      <div className="flex flex-col md:flex-row justify-center">
-        <div className="w-full">
-          <p className="text-2xl">
-            {"I'm"} a Full-Stack Software Engineer at <a href="https://www.roadieslabs.xyz" className="highlight" target="_blank" rel="noreferrer">Roadies Labs Inc.</a> 
+    <section id="about" className="w-full pt-[90px] px-10 md:px-10 lg:px-40">
+      <h1 className="text-5xl sm:text-6xl lg:text-7xl ">Who am I?</h1>
+      <div className="flex flex-col justify-around">
+        {/* <div className="profile max-w-[300px] max-h-[240px] flex align-center justify-center mx-auto">
+              <Image
+                className="profile"
+                src="/linkedinprofilepic.jpg"
+                alt="Mitchell Marino Profile Picture"
+                layout="fixed"
+                width={200}
+                height={200}
+              />
+              <style global jsx>{`
+                .profile {
+                  border-radius: 50%;
+                  border: 2px solid var(--important);
+                  background-color: var(--important);
+                }
+              `}</style>
+            </div> */}
+        <div className="description text-2xl md:text-3xl">
+          <p className="">
+            My name is Mitchell, and {"I'm"} a Full-Stack Software Engineer.
+            </p>           
+            <br></br>
+            <p className='text-2xl md:text-3xl '>
+            I have one year of software engineering experience, specializing in application development with JavaScript and Python. 
             </p>
             <br></br>
-            <p className='text-xl max-w-[600px]'>
-            As a self-starter, I have passion for creating user-oriented front-ends and organized, efficient back-ends.
-            </p>
+            <p>Currently a software engineer at <a href="https://www.roadieslabs.xyz" className="highlight" target="_blank" rel="noreferrer">Roadies Labs Inc.</a> </p>
+            <br></br>
+          <p className={details? "text-2xl md:text-3xl": "hidden"} >After graduating from UCLA with a degree in Molecular Biology and spending some time in biotech, I decided to make a career change and pursue my passion for coding. I am a highly motivated, self starter who loves solving problems. <br></br><br></br>In my free time, I enjoy hiking, surfing, snowboarding, gaming, and working out.  </p>
           
-          <p className={details? "text-xl": "hidden"} >I started my professional career in the biotech industry, but made a drastic career change after finding my passion for software engineering. I find that many of my previous skills as a scientist (such as research, experimentation, and strong attention to detail) remain valuable assets to my professional success. I view coding through a scientific lens, which helps me work efficiently and methodically. </p>
-          <button className="highlight text-3xl py-10"onClick={() => handleDetailsClick()}>
+          
+          <button className="highlight text-2xl md:text-3xl py-10"onClick={() => handleDetailsClick()}>
             {details ? "HIDE": 
             "SEE MORE"}
           </button>
+          <style global jsx>{`
+                .description {
+                  border-left: 2px solid var(--important);
+                  padding: 10px 20px;
+                  margin: 20px 20px 0 0 ;
+                }
+              `}</style>
         </div>
-         <div className="profile h-[360px] w-[360px] pt-[5px] px-[5px] mx-auto  ">
-            <Image
-              className="profile"
-              src="/linkedinprofilepic.jpg"
-              alt="Mitchell Marino Profile Picture"
-              height={350}
-              width={350}
-            />
-            <style global jsx>{`
-              .profile {
-                border-radius: 10%;
-              }
-            `}</style>
-          </div>
+         
       </div>
       <div id="skills">
         <Skills />
