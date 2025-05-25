@@ -38,10 +38,10 @@ export default function About () {
             </p>           
             <br></br>
             <p className='text-2xl md:text-3xl '>
-            I have one year of software engineering experience, specializing in application development with JavaScript and Python. 
+            I have three years of software engineering experience, specializing in application development with JavaScript and Python. 
             </p>
             <br></br>
-            <p>Currently a software engineer at <a href="https://www.roadieslabs.xyz" className="highlight" target="_blank" rel="noreferrer">Roadies Labs Inc.</a> </p>
+            <p>Currently a Programmer Analyst at the University of Southern California {"(USC)"} in the <a href="https://rts.usc.edu/about/" className="highlight" target="_blank" rel="noreferrer">Department of Research Technology Services.</a> </p>
             <br></br>
           <p className={details? "text-2xl md:text-3xl": "hidden"} >After graduating from UCLA with a degree in Molecular Biology and spending some time in biotech, I decided to make a career change and pursue my passion for coding. I am a highly motivated, self starter who loves solving problems. <br></br><br></br>In my free time, I enjoy hiking, surfing, snowboarding, gaming, and working out.  </p>
           
