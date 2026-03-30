@@ -54,7 +54,7 @@ export const education = [
   {
     degree: 'Computer Science Coursework',
     institution: 'El Camino College',
-    year: '2023 – Present',
+    year: '2025 – Present',
     note: 'Intro to Computer Science (C++), Data Structures & Algorithms, Discrete Mathematics, Linux Operating Systems (in progress)',
   },
 ]
