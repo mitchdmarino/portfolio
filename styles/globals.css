@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #060416;
-  --secondary: #EDE9E8;
-  --important: #2fffb3;
-  --tertiary: rgb(61, 16, 137);
+  --bg: #0c1b2e;
+  --surface: #1a2f45;
+  --border: #2d4a6a;
+  --accent-blue: #4a9ece;
+  --accent-olive: #8fa84e;
+  --text-primary: #e2eaf2;
+  --text-secondary: #8aa8c0;
   --white: #ffffff;
-  --offWhite: #EAE6E5;
 }
 
 html {
@@ -22,47 +23,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
   width: 100vw;
   overflow-x: hidden;
-  color: var(--secondary)
-}
-
-#wrapper {
-  overflow-x: 'hidden'
-}
-
-#home {
-  background: rgb(9,4,186);
-  background: linear-gradient(345deg, rgb(5, 1, 117) 0%, rgba(189,12,255,1) 100%);
-  color: var(--secondary);
-  min-height: 90vh;
-  position: relative;
-}
-
-#about {
-  position: relative;
-  z-index: 10;
-  background: var(--primary);
-  min-height: 100vh;
-  
-
-}
-#contact {
-background-color: var(--primary);
-min-height: 100vh;
-
-}
-
-#projects {
-  background:  var(--tertiary);
-  min-height: 100vh;
-  
-}
-
-#__next {
-  margin: 0 ;
-  padding: 0
 }
 
 a {
@@ -72,56 +37,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  background-color: var(--primary);
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid var(--important); /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input:focus {
-  border: 1px solid var(--important);
-}
-
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: var(--important);
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: var(--important);
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.highlight {
-  color: var(--important)
-}
-
-.footer {
-  /* background-color: var(--primary); */
-  color: var(--important);
-  padding: 20px;
-  text-align: center;
-  font-size: 1.3em;
 }

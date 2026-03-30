@@ -1,56 +1,113 @@
-import React, { useState } from "react";
-import styles from "./navbar.module.css"
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import MenuItems from "./responsive/menuItems.jsx"
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { useState } from 'react'
+import { FiMenu, FiX } from 'react-icons/fi'
 
-export default function Navbar({navStatus}) {
-  const [active, setActive] = useState(false)
-  let homeClass = ""
-  let aboutClass = ""
-  let projectsClass = ""
-  let contactClass = ""
+const navLinks = [
+  { label: 'About', href: '/about' },
+  { label: 'Experience', href: '/experience' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Contact', href: '/contact' },
+]
 
-  switch(navStatus) {
-    case 'home':
-      homeClass=styles.active
-      break;
-    case 'about':
-      aboutClass=styles.active
-      break;
-    case 'projects':
-      projectsClass=styles.active
-      break;
-    case 'contact':
-      contactClass=styles.active
-      break;
-    default: 
-      homeClass=styles.active
-  }
+export default function Navbar() {
+  const router = useRouter()
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  const showMenu = () => {
-    setActive(!active)
-  }
+  const isActive = (href) => router.pathname === href
+
   return (
-    <nav className={styles.nav}>
-      <div className={`absolute right-6 md:hidden top-6 scale-150`}>
-        <MenuOutlinedIcon 
-          onClick={showMenu}
-          className="scale-150 cursor-pointer" 
-          color="inherit"
-          
-        />
+    <header
+      className="fixed top-0 left-0 right-0 z-50 border-b"
+      style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)' }}
+    >
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        {/* Logo / Name */}
+        <Link href="/" onClick={() => setMenuOpen(false)} className="flex flex-col leading-tight">
+          <span className="text-base font-bold text-white">Mitchell Marino</span>
+          <span className="text-xs font-medium" style={{ color: 'var(--accent-blue)' }}>
+            BA &amp; Full Stack Developer
+          </span>
+        </Link>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-7">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium transition-colors pb-0.5"
+              style={{
+                color: isActive(link.href) ? 'var(--accent-blue)' : 'var(--text-secondary)',
+                borderBottom: isActive(link.href) ? '2px solid var(--accent-blue)' : '2px solid transparent',
+              }}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <a
+            href="/Mitchell_Marino_Resume_BA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium px-4 py-1.5 rounded border transition-all"
+            style={{
+              color: 'var(--accent-blue)',
+              borderColor: 'var(--accent-blue)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'var(--accent-blue)'
+              e.currentTarget.style.color = 'var(--bg)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent'
+              e.currentTarget.style.color = 'var(--accent-blue)'
+            }}
+          >
+            Resume
+          </a>
+        </nav>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden"
+          style={{ color: 'var(--text-primary)' }}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+        </button>
       </div>
-      <div >
-        <ul className="hidden md:flex">
-          <li className={styles.nav_item+ " " + homeClass}><a href="#">HOME</a></li>
-          <li className={styles.nav_item+ " " + aboutClass}><a href="#about">ABOUT</a></li>
-          <li className={styles.nav_item+ " " + projectsClass}><a href="#projects">PROJECTS</a></li>
-          <li className={styles.nav_item+ " " + contactClass}><a href="#contact">CONTACT</a></li>
-          <li className={styles.nav_item}><a href='/Mitchell_Marino_Resume.pdf'rel="noopener noreferrer"target="_blank">RESUME</a></li>
-        </ul>
-        <MenuItems showMenu={showMenu} active={active} navStatus={navStatus} />
-      </div>
-      
-    </nav>
-  );
-};
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div
+          className="md:hidden border-t"
+          style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+        >
+          <nav className="flex flex-col px-6 py-4 gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-sm font-medium py-1"
+                style={{ color: isActive(link.href) ? 'var(--accent-blue)' : 'var(--text-secondary)' }}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <a
+              href="/Mitchell_Marino_Resume_BA.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium py-1"
+              style={{ color: 'var(--accent-blue)' }}
+            >
+              Resume ↗
+            </a>
+          </nav>
+        </div>
+      )}
+    </header>
+  )
+}
